@@ -6,15 +6,17 @@
         {{title}}
       </h1>
     </div>
-    <div id="test">
+    <div>
       <p>count={{count}}</p>
       <button @click="takeCount">カウントダウン</button>
       <button @click="addCount">カウントアップ</button>
     </div>
     <div>
+      <button>
       <p v-if="data1 == 'A'">Aです</p>
       <p v-else-if="data1 == 'B'">Bです</p>
       <p v-else>それ以外です</p>
+      </button>
 　　</div>
   </div>
 </template>
