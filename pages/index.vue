@@ -6,24 +6,28 @@
         {{title}}
       </h1>
     </div>
-    <div>
+    <div id="test">
       <p>count={{count}}</p>
       <button @click="takeCount">カウントダウン</button>
       <button @click="addCount">カウントアップ</button>
     </div>
+    <div>
+      <p v-if="data1 == 'A'">Aです</p>
+      <p v-else-if="data1 == 'B'">Bです</p>
+      <p v-else>それ以外です</p>
+　　</div>
   </div>
 </template>
 
 <script lang='js'>
-
-
 const hogehoge = 'test'
 console.log(hogehoge);
 
 export default {
   data(){
   return{
-    title:hogehoge
+    title:hogehoge,
+    data1:'C'    
   }
 },
 computed: {
